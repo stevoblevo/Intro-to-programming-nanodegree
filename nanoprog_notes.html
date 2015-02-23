@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>    
+  <head>
+    <title>Nanodegree Notes: Intro to Programming</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="./scripts/script.js"></script>
+  </head>
+
+  <body>
+    <div class="container-whole"> <!--thought I needed this for the header to persist during scroll-->
+  	  <div class="header">
+  	    <!--soon to be slide-out navigation outline--> 
+        <div class="nav-box">
+          <div class="nav-icon"><br></div>
+        </div>
+        <div class="nanodegree">
+            <a class="head-link" href="http://udacity.com"> 
+              <h1>Intro to Progamming nanodegree</h1>
+            </a>
+        </div> 
+        <!--link to project page. empty right now-->
+          <a class="head-link author" href="http://stevoblevo.github.io/intro-to-programming-nanodegree/"> <h1>stevoblevo</h1></a>       
+      </div>
+      <div class="container-body">
+          <div class="expand-all">[expand all]</div>
+          <div class="collapse-all">[collapse all]</div>
+        <!--ids not used yet. will come in handy with slide-out nav outline-->
+        <div class="stage" id="stage-1">
+          <h2>Stage 1: Webpages, Documents, and Structure</h2>
+          <div class="lesson" id=lesson-1>
+            <h3>The Basics of The Web & HTML</h3>
+          </div>
+          <div class="lesson-container">
+            <div class="note" id=lesson-1-1>
+              <div class="note-title">
+                What <i>is</i> this "World Wide Web" anyway?
+              </div>
+              <div class="note-text">
+                <p> 
+                  The "web" is a collection of "pages" or documents on different
+                  computers all over the world and all linked together. 
+                  These documents
+                  are usually written in a special way so other computers know how 
+                  to display them properly. We use computer programs called 
+                  "web browsers" to interpret these documents. When we (the "user") 
+                  go to a website (e.g. udacity.com) our browser sends an "HTTP 
+                  request" for the
+                  computer on the other end (called a "server") to send us the 
+                  document at that address. Our computer is called the "client" in 
+                  this model.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-1-2">
+              <div class="note-title">
+                HTML! What is it good for?
+              </div>
+              <div class="note-text">
+                <p>
+                  Documents on the Web are written in HTML for other computers to read. 
+                  An HTML document is regular text (for the humans) with funny marks 
+                  interspersed (for the computer). These marks tell the computer how 
+                  the text should look. Browsers take HTML documents and translate them 
+                  into human-pleasing text using the "markup". Later we'll learn how 
+                  "CSS" can take HTML and make the page look even more fancy for us 
+                  (the user) to read.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-1-3">
+              <div class="note-title">
+                Markup - Tags, Elements, and <i>Attributes? Oh My!</i>
+              </div>
+              <div class="note-text">
+                <p>
+                  HTML is made up of Elements which contain tags. Tags don't show up on 
+                  the page but instead are read by the web browser to know how the text 
+                  should be shown. Elements include the text content as well as other 
+                  things like attributes which modify tags. Here's an example of an 
+                  element: &lt;em&gt;this text is italic&lt;/em&gt;. In this case 
+                  &lt;em&gt;&lt;/em&gt; is the tag. A more complex element would be:
+                  <a href="https://www.udacity.com" class='link'>&lt;a
+                  href="https://www.udacity.com"&gt; click me! &lt;/a&gt; </a>. 
+                  Can you guess what that does? In this case 
+                  <em>href="https://www.udacity.com"</em> is an attribute.
+                </p>
+                <p>
+                  Tags usually have a beginning and end but not all. Tags that don't
+                  need an ending tag (&lt;/em&gt; is the end) are called "void" tags. A 
+                  good example of a void tag would be &lt;br&gt; which tells the 
+                  browser to display the next text on a new line. 
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-1-4">
+              <div class="note-title">
+                It's Elementary! or get inline and build blocks!
+              </div>  
+              <div class="note-text">
+                <p>
+                  Elements are either <em>inline</em> or <em>block</em>. Block elements 
+                  have a virtual box around the content. HTML documents are lots of
+                  boxes as we'll find out more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lesson" id=lesson-2>
+            <h3>Creating a Structured Document with HTML</h3>
+          </div>
+          <div class="lesson-container">
+            <div class="note" id=lesson-2-1>
+              <div class="note-title">
+                Webpage: a Recipe
+              </div>
+              <div class="note-text">
+                <p> 
+                  Websites contain HTML, CSS, and Javascript files. HTML provide
+                  structure and content, CSS provide style and defines how that
+                  content looks, and Javascript provide interactive functions.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-2-2">
+              <div class="note-title">
+                Plant a Tree-like Structure
+              </div>
+              <div class="note-text">
+                <p>
+                  HTML is written in a nested style with elements inside of
+                  container elements. This resembles the structure of a webpage:
+                  a bunch of boxes inside of boxes inside of other boxes. The HTML
+                  code is indented to make the nested structure easier to read and
+                  identify which boxes are inside of others.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-2-3">
+              <div class="note-title">
+                Identical HTML Twins with Style
+              </div>
+              <div class="note-text">
+                <p>
+                  Two websites can have the exact same HTML but look completely
+                  different using CSS to change font, color, size, or more. 
+                  CSS which has it's own language and syntax works with HTML 
+                  to specify the style of the page.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-2-4">
+              <div class="note-title">
+                Who is this "DOM" guy?
+              </div>  
+              <div class="note-text">
+                <p>
+                  DOM or "Document Object Model" is the name we give to the tree
+                  of HTML code: the DOM Tree. Browsers take HTML documents and
+                  parse them into a DOM.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-2-5">
+              <div class="note-title">
+                Every Shape a Box
+              </div>
+              <div class="note-text">
+                <p>
+                  HTML only makes boxes. CSS can change the look of these boxes
+                  into circles by adding a border-radius property. Nevertheless
+                  the box remains and what looks like a circle is still contained
+                  in the box by rounding the edges of the border box.
+                </p>
+              </div>
+              </div>
+            <div class="note" id="lesson-2-6">
+              <div class="note-title">
+                Classy Boxes
+              </div>
+              <div class="note-text">
+                <p>
+                  Give html elements/boxes a descriptive class attribute and 
+                  modify the look/style of that class in CSS.
+                </p>
+                In HTML:
+                <p class="indent-text">
+                  &lt;div class = "note-description"&gt; I'm describing 
+                  my note here &lt;/div&gt;
+                </p>
+                In CSS:
+                <p class="indent-text">
+                    class = "note-description" {<br>
+                    background-color: blue;<br>
+                    border-radius: 12px;<br>
+                    max-width: 1000px;<br>
+                    max-height: 1000px;<br>
+                  }
+                </p>                  
+              </div>
+            </div>
+            <div class="note" id="lesson-2-7">
+              <div class="note-title">
+                Texting the Editor
+              </div>
+              <div class="note-text">
+                <p>
+                  Using special text editors helps programmers by automatically
+                  generating closing tags, color-coding, and sometimes even
+                  letting you know when you missed putting a semicolon at the end.
+                </p>
+            </div>
+          </div>
+          </div>
+          <div class="lesson" id=lesson-3>
+            <h3>Adding CSS to HTML Structure</h3>
+          </div>
+          <div class="lesson-container">
+            <div class="note" id=lesson-3-1>
+              <div class="note-title">
+                Three Ways of adding Style
+              </div>
+              <div class="note-text">
+                <p> 
+                  The first and best way to add CSS to HTML is with a separate
+                  CSS style sheet. This way you can stay organized. Second,
+                  one can add CSS code into the &lt;head&gt; section of an HTML
+                  document. Third is adding CSS inline with each element. 
+                  The third way should be avoided. It causes lots of repetition
+                  and muddies the HTML document making it longer, more cluttered,
+                  and just harder to read for humans.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-3-2">
+              <div class="note-title">
+                The Heir of Cascade
+              </div>
+              <div class="note-text">
+                <p>
+                  The "Cascading" part of CSS relates to the tree-like structure
+                  (DOM) of HTML. Each element within an element inherits the CSS
+                  style of it's parent element. More specific rules, meaning those
+                  assigned to the most inner element will apply to that element
+                  only if they replace the inherited rules.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-3-3">
+              <div class="note-title">
+                Go to Class!
+              </div>
+              <div class="note-text">
+                <p>
+                  Defining rules for HTML elements, CSS uses the element tag
+                  or the class assigned to the element. The second way is best
+                  as it is more versatile and can single out groups of elements
+                  or single elements. The difference is between defining a rule
+                  for &lt;div&gt; or defining a rule for the div with class 
+                  "title." The first will affect all div elements and the second
+                  will only affect divs with the class specified "title." 
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-3-4">
+              <div class="note-title">
+                Boxes can flex too</div>  
+              <div class="note-text">
+                <p>
+                  Position boxes next to each other by using the flex box layout.
+                  Change the display attribute of the parent container to a value
+                  of "flex". The child elements will then position next to each
+                  other.
+                </p>
+              </div>
+            </div>
+            <div class="note" id="lesson-3-5">
+              <div class="note-title">
+                Trust but Verify</div>
+              <div class="note-text">
+                <p><a href="http://validator.w3.org/#validate_by_input">HTML</a> and
+                  <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">
+                  CSS</a> can be verified using online varidators.
+                </p>
+              </div>  
+          </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>     
+          
+      
+  
+</html>
+    
