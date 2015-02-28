@@ -4,6 +4,8 @@
     <title>Nanodegree Notes: Intro to Programming</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='style/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
     <script src="./scripts/script.js"></script>
@@ -11,10 +13,10 @@
 
   <body>
     <div class="container-whole"> <!--thought I needed this for the header to persist during scroll-->
-  	  <div class="header">
+  	  <header class="header">
   	    <!--soon to be slide-out navigation outline--> 
-        <div class="nav-box">
-          <div class="nav-icon"><br></div>
+        <div class="fa nav-icon">
+          <div class="fa-list-ul fa-2x"></div>
         </div>
         <div class="nanodegree">
             <a class="head-link" href="http://udacity.com"> 
@@ -22,22 +24,22 @@
             </a>
         </div> 
         <!--link to project page. empty right now-->
-          <a class="head-link author" href="http://stevoblevo.github.io/intro-to-programming-nanodegree/"> <h1>stevoblevo</h1></a>       
-      </div>
+          <a class="head-link author" href="http://stevoblevo.github.io/intro-to-programming-nanodegree/"> <h1>stevoblevo</h1></a>          
+      </header>
       <div class="container-body">
           <div class="expand-all">[expand all]</div>
           <div class="collapse-all">[collapse all]</div>
         <!--ids not used yet. will come in handy with slide-out nav outline-->
-        <div class="stage" id="stage-1">
+        <section class="stage" id="stage-1">
           <h2>Stage 1: Webpages, Documents, and Structure</h2>
-          <div class="lesson" id=lesson-1>
+          <header class="lesson" id="lesson-1">
             <h3>The Basics of The Web & HTML</h3>
-          </div>
-          <div class="lesson-container">
-            <div class="note" id=lesson-1-1>
-              <div class="note-title">
-                What <i>is</i> this "World Wide Web" anyway?
-              </div>
+          </header>
+          <section class="lesson-container">
+            <article class="note" id="lesson-1-1">
+              <header class="note-title">
+                What <em>is</em> this "World Wide Web" anyway?
+              </header>
               <div class="note-text">
                 <p> 
                   The "web" is a collection of "pages" or documents on different
@@ -53,11 +55,11 @@
                   this model.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-1-2">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-1-2">
+              <header class="note-title">
                 HTML! What is it good for?
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   Documents on the Web are written in HTML for other computers to read. 
@@ -69,11 +71,11 @@
                   (the user) to read.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-1-3">
-              <div class="note-title">
-                Markup - Tags, Elements, and <i>Attributes? Oh My!</i>
-              </div>
+            </article>
+            <article class="note" id="lesson-1-3">
+              <header class="note-title">
+                Markup - Tags, Elements, and <em>Attributes? Oh My!</em>
+              </header>
               <div class="note-text">
                 <p>
                   HTML is made up of Elements which contain tags. Tags don't show up on 
@@ -94,11 +96,11 @@
                   browser to display the next text on a new line. 
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-1-4">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-1-4">
+              <header class="note-title">
                 It's Elementary! or get inline and build blocks!
-              </div>  
+              </header>  
               <div class="note-text">
                 <p>
                   Elements are either <em>inline</em> or <em>block</em>. Block elements 
@@ -106,16 +108,16 @@
                   boxes as we'll find out more.
                 </p>
               </div>
-            </div>
-          </div>
-          <div class="lesson" id=lesson-2>
+            </article>
+          </section>
+          <header class="lesson" id="lesson-2">
             <h3>Creating a Structured Document with HTML</h3>
-          </div>
-          <div class="lesson-container">
-            <div class="note" id=lesson-2-1>
-              <div class="note-title">
+          </header>
+          <section class="lesson-container">
+            <article class="note" id="lesson-2-1">
+              <header class="note-title">
                 Webpage: a Recipe
-              </div>
+              </header>
               <div class="note-text">
                 <p> 
                   Websites contain HTML, CSS, and Javascript files. HTML provide
@@ -123,11 +125,11 @@
                   content looks, and Javascript provide interactive functions.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-2-2">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-2-2">
+              <header class="note-title">
                 Plant a Tree-like Structure
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   HTML is written in a nested style with elements inside of
@@ -137,11 +139,11 @@
                   identify which boxes are inside of others.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-2-3">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-2-3">
+              <header class="note-title">
                 Identical HTML Twins with Style
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   Two websites can have the exact same HTML but look completely
@@ -150,11 +152,11 @@
                   to specify the style of the page.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-2-4">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-2-4">
+              <header class="note-title">
                 Who is this "DOM" guy?
-              </div>  
+              </header>  
               <div class="note-text">
                 <p>
                   DOM or "Document Object Model" is the name we give to the tree
@@ -162,11 +164,11 @@
                   parse them into a DOM.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-2-5">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-2-5">
+              <header class="note-title">
                 Every Shape a Box
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   HTML only makes boxes. CSS can change the look of these boxes
@@ -175,11 +177,11 @@
                   in the box by rounding the edges of the border box.
                 </p>
               </div>
-              </div>
-            <div class="note" id="lesson-2-6">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-2-6">
+              <header class="note-title">
                 Classy Boxes
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   Give html elements/boxes a descriptive class attribute and 
@@ -200,11 +202,11 @@
                   }
                 </p>                  
               </div>
-            </div>
-            <div class="note" id="lesson-2-7">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-2-7">
+              <header class="note-title">
                 Texting the Editor
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   Using special text editors helps programmers by automatically
@@ -212,16 +214,16 @@
                   letting you know when you missed putting a semicolon at the end.
                 </p>
             </div>
-          </div>
-          </div>
-          <div class="lesson" id=lesson-3>
+          </article>
+          </section>
+          <header class="lesson" id="lesson-3">
             <h3>Adding CSS to HTML Structure</h3>
-          </div>
-          <div class="lesson-container">
-            <div class="note" id=lesson-3-1>
-              <div class="note-title">
+          </header>
+          <section class="lesson-container">
+            <article class="note" id="lesson-3-1">
+              <header class="note-title">
                 Three Ways of adding Style
-              </div>
+              </header>
               <div class="note-text">
                 <p> 
                   The first and best way to add CSS to HTML is with a separate
@@ -233,11 +235,11 @@
                   and just harder to read for humans.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-3-2">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-3-2">
+              <header class="note-title">
                 The Heir of Cascade
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   The "Cascading" part of CSS relates to the tree-like structure
@@ -247,11 +249,11 @@
                   only if they replace the inherited rules.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-3-3">
-              <div class="note-title">
+            </article>
+            <article class="note" id="lesson-3-3">
+              <header class="note-title">
                 Go to Class!
-              </div>
+              </header>
               <div class="note-text">
                 <p>
                   Defining rules for HTML elements, CSS uses the element tag
@@ -263,10 +265,11 @@
                   will only affect divs with the class specified "title." 
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-3-4">
-              <div class="note-title">
-                Boxes can flex too</div>  
+            </article>
+            <article class="note" id="lesson-3-4">
+              <header class="note-title">
+                Boxes can flex too
+              </header>  
               <div class="note-text">
                 <p>
                   Position boxes next to each other by using the flex box layout.
@@ -275,19 +278,21 @@
                   other.
                 </p>
               </div>
-            </div>
-            <div class="note" id="lesson-3-5">
-              <div class="note-title">
-                Trust but Verify</div>
+            </article>
+            <article class="note" id="lesson-3-5">
+              <header class="note-title">
+                Trust but Verify
+              </header>
               <div class="note-text">
                 <p><a href="http://validator.w3.org/#validate_by_input">HTML</a> and
                   <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">
                   CSS</a> can be verified using online varidators.
                 </p>
               </div>  
-          </div>  
-          </div>
-        </div>
+            </article>  
+          </section>
+        </section>
+          
       </div>
     </div>
   

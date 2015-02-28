@@ -1,7 +1,6 @@
 /* CSS Document */
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 body {
-  color: #C0C0C0;  
+  color:#C0C0C0;  
   background:url(../images/bg.jpg);
   margin:0px;
   font-size:medium;
@@ -10,36 +9,26 @@ body {
   background:#0F366B;
   height:55px;    
   color: #f28f13;
-  font-family:Poiret\ One;
+  font-family:"Poiret One";
   position:fixed;
   top:0;
   width:100%;
 }
-.nav-box {
-  position: relative;
-  margin-left:1em;
-  padding-left: 2em;
-  padding-bottom: 2.3em;
-  padding-right: 2em;
+.fa {
+  position:relative;
   float:left;
   cursor:pointer;
+  margin:10px;
+  font-size:2em;
 }
-.nav-box:hover {
-  background-color:#f0f0f0;
 }
-.nav-icon:before {
-  content: "";
-  position: absolute;
-  left: 20%;
-  top: 0.6em;
-  width: 2.4em;
-  height: 0.4em;
-  border-radius:5px;
-  background: #f28f13;
-  box-shadow: 0 .9em 0 0 #f28f13, 0 1.8em 0 0 #f28f13;
+.fa-list-ul::before {
+  position:absolute;
   display:inline-block;
 }
-/*from http://css-tricks.com/three-line-menu-navicon/*/
+.fa:hover {
+  color:#FFF;
+}
 .nanodegree h1 {
   padding:0px;
   margin:0px;
@@ -68,13 +57,12 @@ body {
 .stage {
   font-size:1.3em;
   padding:0px 50px;
-  margin-left:3em;
+  margin:auto;
   min-width:660px;
   max-width:1230px;
   box-sizing:border-box;
 }
 .expand-all {
-  margin-left:2em;
   cursor:pointer;
   display:inline-block;
   transition:0.3s;
@@ -106,7 +94,7 @@ body {
 .lesson-container {
 }
 .note {
-  margin: 10px;
+  margin:10px;
   background-color:#1d1f20;
   padding:1px 10px;
   border-radius:6px;
@@ -139,13 +127,6 @@ body {
 .header {
 	height:42px;
     font-size:.8em;
-}
-.container-body {
-  margin-left:10px;
-  margin-top:60px;
-}
-.stage {
-  margin-left:0;
 }
 .stage h2 {
   font-size:1.3em;
