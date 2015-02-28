@@ -21,7 +21,6 @@ body {
   margin:10px;
   font-size:2em;
 }
-}
 .fa-list-ul::before {
   position:absolute;
   display:inline-block;
@@ -57,7 +56,8 @@ body {
 .stage {
   font-size:1.3em;
   padding:0px 50px;
-  margin:auto;
+  margin:0;
+  margin-left:3em;
   min-width:660px;
   max-width:1230px;
   box-sizing:border-box;
