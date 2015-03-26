@@ -38,6 +38,48 @@ def make_note_HTML(note, lesson_number, note_number):
     note_text = note[1]
     return generate_note_HTML(note_title, note_text, lesson_number, note_number)
 
+# open local txt file as one-line string 
+with open ("stage2notes.txt") as data:
+    stage2 = data.read().replace('\n', '')
+# convert to list of lessons
+LESSON_1_NOTES = []
+LIST_OF_LESSONS = []
+
+def get_lesson_notes(notes):
+    lesson_notes = notes[start:end]
+
+def lesson_title(notes):
+    start = notes.find("Lesson: ")+8
+    end = notes.find("Title: ")
+    title = notes[start:end]
+    return title
+
+def get_note_title(note):
+    start = note.find("Title: ")+7
+    end = note.find("Description: ")
+    title = note[start:end]
+    return title
+
+def get_note_description(note):
+    start = note.find("Description: ")+13
+    end = note.find ("Title: ")
+    description = note[start:end]
+    return description
+    
+def make_note_list(notes):
+    NOTELIST = []
+    NOTE = [title, description]
+    i=0
+    while i != -1:
+        title = get_note_title(notes)
+        description = get_note_description(notes)
+        notes = notes[notes.find("Description ")+1:]
+        NOTELIST.append(NOTE)
+    return NOTELIST
+def pull_lesson_notes(notes):
+    
+    return void
+pull_lesson_notes(stage2)
 # This is an example of what a list of concepts might look like.
 LIST_OF_NOTES = [ ['Python', 'Python is a Programming Language'],
                   ['For Loop', 'For Loops allow you to iterate over lists'],
@@ -64,4 +106,4 @@ def make_HTML_for_many_lessons(list_of_lessons, lesson_number):
         
 
 # testing
-print make_HTML_for_many_lessons(LIST_OF_LESSONS,3)
+#print make_HTML_for_many_lessons(LIST_OF_LESSONS,3)
