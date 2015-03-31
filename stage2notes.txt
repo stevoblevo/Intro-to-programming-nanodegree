@@ -1,0 +1,21 @@
+Stage 2: Telling Computers What to Do
+Lesson: Introduction to Serious Programming
+
+Title: Toaster's are limited
+Description: Most machines are built to only do one thing. They are limited. A Computer can do many things but only if it has a program to tell it how. Programs are written in a programming language such as Python. When written in a language like python the code is passed to another program called an interpreter which converts the python language into something the computer knows what to do with.
+
+Title: a new language for computers
+Description: Natural languages have ambiguity. A sentence or phrase or even word can mean more than one thing. This doesn't work with computers which need to know <em>exactly</em> what to do.
+
+Title: Call your Grammar
+Description: Computer programming languages have their own grammar and syntax which much be adhered to.
+
+Lesson: Variables and Strings
+Title: Very able variables
+Description: Variables, which are names given to expressions, can change simply by assigning a new expression to the name. This is done in the same fashion as the initial assignment and can even use the variable in the new expression for assignment (e.g. days = days + 1)
+
+Title: Get Stringy with it
+Description: A string is a sequence of characters surrounded by quotes. One can use either a single quote or double quote but must use the same type to end the string as the one beginning the string.
+
+Title: String plus String
+Description: In Python Strings can be combined or "concatenated" by simply using the + operator between two strings. Numbers cannot be combined with strings. They must be converted to strings first
