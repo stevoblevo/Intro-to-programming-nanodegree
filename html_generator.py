@@ -21,7 +21,7 @@ def generate_lesson_HTML(lesson_title, lesson_text, lesson_number):
     html_text_1 = '''
 <header class="lesson" id="lesson-'''+str(lesson_number)+'''">
    <h3> '''+lesson_title+''' <h3>
-<header>
+</header>
 <section class="lesson-container">'''
     html_text_2 = make_HTML_for_many_notes(lesson_text, lesson_number)
     html_text_3 = '''
